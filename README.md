@@ -21,3 +21,12 @@ FROM `your*project.dataset.olist*orders_dataset`
 ## Tests & Sample Questions:
 why did we do the copying process?
 because if we have data from any other part of the data source and if we are copying the data from a different location to our location we use python or sql to copy those tables. here we used python to copy the files and paste it in our table.
+
+**FINAL TAKE**
+
+BigQuery = home
+Project → organizes system
+Dataset → organizes tables + controls access
+Table → stores data
+
+**# Day 2 – SQL: CTEs + Window Functions**
