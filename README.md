@@ -30,3 +30,9 @@ Dataset → organizes tables + controls access
 Table → stores data
 
 **# Day 2 – SQL: CTEs + Window Functions**
+implement pair swapping logic using CASE and CROSS JOIN
+- handled odd-even order_id swapping
+- managed last row edge case
+- learned CROSS JOIN usage"
+
+
