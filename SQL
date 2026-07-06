@@ -1,2 +1,8 @@
-5th June 2026:
-Started Learning SQL from Data lemur
+01th July 2026:
+Loaded the data using python in Big query 
+
+06 July  2026:
+learnt CTE, windows function, ranking, row_number, dense_rank in big query
+-> querying to find running total of the months using CTE's - i like them more than sub queries. 
+-> found top lifetime valued customers
+->found each customer's first and latest order using FIRST_VALUE().
