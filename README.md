@@ -35,6 +35,7 @@ implement pair swapping logic using CASE and CROSS JOIN
 - managed last row edge case
 - learned CROSS JOIN usage"
 
+**build 1)**
 learnt to find the Running total for each month: (co pilot suggested to use sub query but i did it using CTE :) )
 WITH
   running_total AS (
@@ -72,7 +73,8 @@ SELECT
 FROM real_running_total
 ORDER BY year_month;
 
-**Top lifetime valued Customers:**
+***Build 2)***
+ **Top lifetime valued Customers:**
 SELECT
   orders.customer_id,
   SUM(sales.price) AS total_price,
@@ -84,6 +86,17 @@ JOIN `vf-grp-gbissdbx-dev-1.gsamples_olists.rank_samples` sales
   ON orders.order_id = sales.order_id
 GROUP BY orders.customer_id
 limit 10;
+
+**Build 3)**
+ **Finding first and last customer order:**
+
+SELECT
+  customer_id,
+  order_delivered_customer_date,
+  FIRST_VALUE(order_delivered_customer_date IGNORE NULLS) OVER (ORDER BY order_delivered_customer_date asc) AS first_order_default_window_ignoring_nulls,
+  FIRST_VALUE(order_delivered_customer_date IGNORE NULLS) OVER (ORDER BY order_delivered_customer_date desc ) AS latest_order_full_window_ignoring_nulls 
+FROM
+  `vf-grp-gbissdbx-dev-1`.`gsamples_olists`.`olists_raw_csv` AS orders;
 ---------------------------------------------------------------------------------------------------
 
 
