@@ -71,6 +71,19 @@ SELECT
     AS formatted_value
 FROM real_running_total
 ORDER BY year_month;
+
+**Top lifetime valued Customers:**
+SELECT
+  orders.customer_id,
+  SUM(sales.price) AS total_price,
+  DENSE_RANK() OVER (
+    ORDER BY SUM(sales.price) DESC
+  ) AS customer_rank
+FROM `vf-grp-gbissdbx-dev-1.gsamples_olists.olists_raw_csv` orders
+JOIN `vf-grp-gbissdbx-dev-1.gsamples_olists.rank_samples` sales
+  ON orders.order_id = sales.order_id
+GROUP BY orders.customer_id
+limit 10;
 ---------------------------------------------------------------------------------------------------
 
 
