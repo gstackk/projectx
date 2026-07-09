@@ -98,6 +98,40 @@ SELECT
 FROM
   `vf-grp-gbissdbx-dev-1`.`gsamples_olists`.`olists_raw_csv` AS orders;
 ---------------------------------------------------------------------------------------------------
+**Day 3**
+**Python for Data ingestion through API's :**
+-> have used json file which we convert from API because of an error, but loaded the json with the required columns and created a table in big query.
 
+import json
+import pandas as pd
+import pandas as pd
 
+df = pd.DataFrame(list(data["rates"].items()), columns=["currency", "rate"])
+df["base"] = data["base_code"]
+df["timestamp"] = data["time_last_update_utc"]
+
+print(df)
+from google.cloud import bigquery
+
+# Create client
+client = bigquery.Client(project='vf-grp-gbissdbx-dev-1')
+
+**# Define table (change this)**
+table_id = table_id = "vf-grp-gbissdbx-dev-1.gsamples_olists.exchange_rates"
+# Load dataframe
+job = client.load_table_from_dataframe(df, table_id)
+job.result()  # wait until done
+print("✅ Data loaded to BigQuery")
+
+good for creating tables in BQ and automating the live data fetching from internet.
+
+how do we handle API rate limitting in data pipelines:
+Answer -
+in the data pipeline, we can handle the API rate limit by controlling how frequently the pipeline calls the external API's.
+we can also reduce calls by storing data and avoid duplicates in pipeline.
+
+--------------------------------------------------------------------------------------------------------
+
+**Day 4:**
+**SQL Hard: Joins + Subqueries**
 
