@@ -134,4 +134,70 @@ we can also reduce calls by storing data and avoid duplicates in pipeline.
 
 **Day 4:**
 **SQL Hard: Joins + Subqueries**
+Q1) Find customers who placed orders but never reviewed:
+
+SELECT 
+COUNT(DISTINCT orders.customer_id) AS no_review_customers
+FROM `vf-grp-gbissdbx-dev-1.gsamples_olists.olist_orders_dataset_v2` orders
+LEFT JOIN `vf-grp-gbissdbx-dev-1.gsamples_olists.clean_reviews`  reviews
+  ON orders.order_id = reviews.order_id
+where
+reviews.review_comment_message IS NULL 
+  AND reviews.review_comment_title IS NULL
+
+Q2) Find sellers whose average delivery time is above the platform average
+WITH seller_avg AS (
+  SELECT
+    sellers.seller_id,
+    AVG(TIMESTAMP_DIFF(
+        orders.order_delivered_customer_date,
+        orders.order_purchase_timestamp,
+        DAY
+    )) AS avg_delivery_time
+  FROM `vf-grp-gbissdbx-dev-1`.`gsamples_olists`.`olist_orders_dataset_v2` AS orders
+  JOIN `vf-grp-gbissdbx-dev-1`.`gsamples_olists`.`seller_id_table` AS sellers
+    ON orders.order_id = sellers.order_id
+  WHERE orders.order_status = 'delivered'
+  GROUP BY sellers.seller_id
+),
+
+overall_avg AS (
+  SELECT
+    AVG(TIMESTAMP_DIFF(
+        order_delivered_customer_date,
+        order_purchase_timestamp,
+        DAY
+    )) AS overall_avg_time
+  FROM `vf-grp-gbissdbx-dev-1`.`gsamples_olists`.`olist_orders_dataset_v2`
+  WHERE order_status = 'delivered'
+)
+
+SELECT 
+  seller_id,
+  avg_delivery_time,
+  (SELECT overall_avg_time FROM overall_avg) AS platform_avg_delivery_time
+FROM seller_avg
+WHERE avg_delivery_time > (SELECT overall_avg_time FROM overall_avg)
+ORDER BY avg_delivery_time ;
+
+Q3) SELF JOIN: find pairs of products frequently bought together :
+SELECT
+  a.product_id AS product_1,
+  b.product_id AS product_2,
+  COUNT(*) AS frequency
+FROM `vf-grp-gbissdbx-dev-1.gsamples_olists.seller_id_table` a
+JOIN `vf-grp-gbissdbx-dev-1.gsamples_olists.seller_id_table` b
+  ON a.order_id = b.order_id
+  AND a.product_id < b.product_id   -- avoid duplicate pairs
+GROUP BY
+  product_1, product_2
+ORDER BY 
+  frequency DESC;
+
+Interview question:
+when will you use left join and when will you use inner join:
+left join for keeping all the rows from the left table and if not match on the right keeping them as null.
+inner join - only matching rows, if no match drop them. used for filtering data
+-------------------------------------------------------------------------------------------------
+
 
