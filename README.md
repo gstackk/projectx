@@ -1,7 +1,22 @@
 # ProjectX — Analytics Engineering Journey
 
-## 🚀 Overview
-Repository for building Analytics Engineering skills using BigQuery, SQL, Python, and dbt.
+## 🎯 Main Goal
+
+This repository follows the Agent-X 90 Day Roadmap.
+
+Goal:
+Become an Analytics Engineer capable of building AI-powered data systems using:
+
+- BigQuery
+- SQL
+- Python
+- dbt Core
+- GCP
+- OpenAI API
+- Streamlit
+
+Roadmap:
+See AgentX_90Days.html
 
 Week 1 focused on:
 - BigQuery setup
