@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: olist
+    database: vf-grp-gbissdbx-dev-1
+    schema: gsamples_olists
+
+    tables:
+      - name: orders
+      - name: products
+      - name: sellers
+      - name: order_items
+      - name: customers
