@@ -17,12 +17,33 @@ Week 1 focused on:
 ## 🧱 Architecture
 
 ```text
-CSV Files
-    ↓
-BigQuery Raw Tables
-    ↓
-dbt Sources
-    ↓
-Staging Models
-    ↓
-Validated Data
+┌─────────────────┐
+│ Olist CSV Files │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ BigQuery Raw    │
+│ Tables          │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ dbt Sources     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Staging Models  │
+│ stg_orders      │
+│ stg_products    │
+│ stg_sellers     │
+│ stg_order_items │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Data Tests      │
+│ not_null        │
+│ unique          │
+└─────────────────┘
