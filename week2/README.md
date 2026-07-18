@@ -19,3 +19,13 @@ Source → Staging → Intermediate → Mart
 ## Business Purpose
 
 Transform raw ecommerce data into trusted analytics-ready datasets for reporting and decision making.
+
+## Architecture
+
+Source
+↓
+Staging
+↓
+Intermediate
+↓
+Mart
