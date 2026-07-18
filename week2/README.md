@@ -29,3 +29,14 @@ Staging
 Intermediate
 ↓
 Mart
+## Skills Learned
+
+- ref() and DAGs
+- Generic tests
+- Singular tests
+- Documentation
+- Materializations
+- Incremental models
+- Jinja
+- Macros
+- Mart modeling
