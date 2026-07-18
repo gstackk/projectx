@@ -25,12 +25,15 @@ Transform raw ecommerce data into trusted analytics-ready datasets for reporting
 Source
 
 ↓
+
 Staging
 
 ↓
+
 Intermediate
 
 ↓
+
 Mart
 
 ## Skills Learned
