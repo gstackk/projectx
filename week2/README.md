@@ -23,12 +23,16 @@ Transform raw ecommerce data into trusted analytics-ready datasets for reporting
 ## Architecture
 
 Source
+
 ↓
 Staging
+
 ↓
 Intermediate
+
 ↓
 Mart
+
 ## Skills Learned
 
 - ref() and DAGs
