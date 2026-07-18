@@ -3,12 +3,15 @@
 ## What I Built
 
 - Staging layer validation
-- Intermediate models
+Intermediate models
+- int_orders_with_items
+- int_orders_incremental
 - Incremental model
 - Generic + singular tests
 - Documentation
 - Macros
-- First mart
+Mart model
+- fct_orders
 
 ## Result
 
