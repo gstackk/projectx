@@ -1,9 +1,0 @@
-
-## Dataset Quality Issues
-
-- Duplicate records
-- Missing supplier IDs
-- Null sales values
-- Negative inventory rows
-- Category naming inconsistencies
-- Sales outliers
