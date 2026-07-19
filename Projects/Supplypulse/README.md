@@ -10,15 +10,7 @@ SupplyPulse is a dbt-powered inventory monitoring system that predicts stockout 
 
 ## Data Architecture
 
-Supplypulse_project1
-    ↓
-stg_inventory
-    ↓
-int_daily_velocity
-    ↓
-fct_stockout_risk
-    ↓
-mart_alerts
+Supplypulse_project1 -> stg_inventory -> int_daily_velocity -> fct_stockout_risk -> mart_alerts
 
 ## Models
 
