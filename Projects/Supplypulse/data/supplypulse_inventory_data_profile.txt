@@ -1,0 +1,9 @@
+SupplyPulse dirty synthetic inventory dataset
+Rows: 500
+Columns: 10
+Duplicate sku_id+warehouse_id+snapshot_date rows: 10
+Negative units_in_stock rows: 4
+Null units_sold_yesterday rows: 8
+Outlier units_sold_yesterday >= 300 rows: 4
+Missing supplier_id rows: 6
+Date range: 2026-07-09 to 2026-07-18
