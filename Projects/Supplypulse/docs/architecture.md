@@ -1,6 +1,6 @@
 
 
-raw.inventory_snapshots
+**raw.inventory_snapshots
 
         ↓
         
@@ -17,3 +17,4 @@ fct_stockout_risk
         ↓
         
 mart_alerts
+**
