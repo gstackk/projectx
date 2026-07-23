@@ -1,2 +1,0 @@
-
-What surprised me most about dbt was that writing SQL was not the hardest part. The biggest challenge was ensuring data quality across the entire pipeline. Small issues such as duplicate inventory records and negative stock values impacted downstream calculations and risk classifications. Using dbt tests and lineage helped me catch issues early and understand how changes in one model affected every downstream consumer. I learned that analytics engineering is as much about building trustworthy systems as it is about writing transformations.
