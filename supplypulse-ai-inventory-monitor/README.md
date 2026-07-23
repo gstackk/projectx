@@ -22,15 +22,6 @@ SupplyPulse provides a centralized inventory intelligence platform that surfaces
 
 ---
 
-
-# Test
-
-
-![Dashboard](./%20screenshots/dashboard.png)
-<img src="./%20screenshots/dashboard.png" width="100%">
-
-
-
 # ✅ Solution
 
 SupplyPulse combines:
@@ -108,44 +99,43 @@ Visualizes inventory risk distribution and helps prioritize inventory actions.
 
 # 📸 Product Walkthrough
 
-### Dashboard Overview
+## Dashboard Overview
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](./%20screenshots/dashboard.png)
 
-The dashboard provides inventory visibility, stockout monitoring, KPI tracking and operational alerts.
-
----
-
-### AI Inventory Copilot
-
-![AI Copilot](screenshots/chatbot.png)
-
-Users can ask inventory questions in natural language and receive inventory insights immediately.
+SupplyPulse provides inventory visibility, stockout monitoring, KPI tracking and operational alerts.
 
 ---
 
-### Natural Language → SQL
+## AI Inventory Copilot
 
-![Natural Language to SQL](screenshots/natural_language_to_sql.png)
+![AI Copilot](./%20screenshots/chatbot.png)
 
-Business questions are automatically converted into SQL and executed against BigQuery.
-
----
-
-### Critical Stockout Alert Engine
-
-![Critical Alert](screenshots/critical_alert.png)
-
-Products requiring immediate operational attention are surfaced automatically.
+Users can query inventory data using natural language and receive insights directly from BigQuery.
 
 ---
 
-### dbt Lineage
+## Natural Language → SQL
 
-![dbt Lineage](screenshots/DBT_DAG-lineagegraph.png)
+![Natural Language to SQL](./%20screenshots/natural_language_to_sql.png)
 
-Analytics engineering workflow built using staging, intermediate, fact and mart layers.
+Business questions are converted into SQL automatically and executed against the warehouse.
 
+---
+
+## Critical Stockout Alert Engine
+
+![Critical Alert](./%20screenshots/critical_alert.png)
+
+Automatically identifies products requiring immediate operational attention.
+
+---
+
+## dbt Lineage
+
+![dbt Lineage](./%20screenshots/DBT_DAG-lineagegraph.png)
+
+Analytics engineering workflow using staging, intermediate, fact and mart layers.
 ---
 
 # 🛠 Technology Stack
