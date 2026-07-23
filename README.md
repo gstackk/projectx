@@ -92,17 +92,25 @@ Visualizes inventory risk distribution and prioritizes inventory actions.
 
 ## 📸 Screenshots
 
-### Dashboard
+## 📸 Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-### AI Copilot
+## 🤖 AI Copilot
 
-![AI Copilot](screenshots/ai-copilot.png)
+![AI Copilot](screenshots/chatbot.png)
 
-### Critical Alert Engine
+## 🧠 Natural Language to SQL
 
-![Alert Engine](screenshots/critical-alert.png)
+![Natural Language to SQL](screenshots/natural_language_to_sql.png)
+
+## 🚨 Alert Engine
+
+![Critical Alert](screenshots/critical_alert.png)
+
+## 🏗 dbt Lineage
+
+![dbt Lineage](screenshots/DBT_DAG-lineagegraph.png)
 
 ---
 
