@@ -1,33 +1,47 @@
-# ProjectX
+# 🚀 ProjectX
 
 Analytics Engineering + AI Data Products Portfolio
 
-## Projects
+This repository contains production-style data and AI projects built using:
 
-### 📦 SupplyPulse
-AI-powered inventory risk monitoring system.
+- BigQuery
+- dbt
+- Python
+- Streamlit
+- Generative AI
 
-Tech:
+---
+
+## 📦 SupplyPulse
+
+AI-powered inventory monitoring platform.
+
+### Highlights
+
+- Inventory risk scoring
+- Natural Language → SQL
+- AI Inventory Copilot
+- Critical stockout alerts
+- BigQuery + dbt warehouse
+
+### Tech Stack
+
 - BigQuery
 - dbt
 - Python
 - Streamlit
 - Groq AI
 
-Features:
-- Inventory risk scoring
-- Natural Language → SQL
-- AI Copilot
-- Critical stockout alerts
-
-➡️ Open: ./supplypulse-ai-inventory-monitor
+➡️ Open: `supplypulse-ai-inventory-monitor/`
 
 ---
 
-### 🚀 Project 2
+## 🚀 Project 2
+
 Coming Soon
 
 ---
 
-### 🚀 Project 3
+## 🚀 Project 3
+
 Coming Soon
