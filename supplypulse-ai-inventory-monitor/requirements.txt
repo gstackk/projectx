@@ -1,1 +1,9 @@
 
+streamlit
+google-cloud-bigquery
+dbt-bigquery
+groq
+python-dotenv
+pandas
+db-dtypes
+google-cloud-dataproc
