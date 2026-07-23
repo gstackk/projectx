@@ -109,7 +109,7 @@ SupplyPulse provides inventory visibility, stockout monitoring, KPI tracking and
 
 ## AI Inventory Copilot
 
-![AI Copilot](./%20screenshots/chatbot.png)
+![AI Copilot](./%20screenshots/ai-copilot.png)
 
 Users can query inventory data using natural language and receive insights directly from BigQuery.
 
@@ -133,7 +133,7 @@ Automatically identifies products requiring immediate operational attention.
 
 ## dbt Lineage
 
-![dbt Lineage](./%20screenshots/DBT_DAG-lineagegraph.png)
+![dbt Lineage](./%20screenshots/dbt-lineage.png)
 
 Analytics engineering workflow using staging, intermediate, fact and mart layers.
 ---
