@@ -1,5 +1,6 @@
+# 🏗 Architecture
 
-
+```text
 Inventory Data
       ↓
    BigQuery
@@ -15,8 +16,4 @@ fct_stockout_risk
  AI Copilot
       ↓
  Alert Engine
-
-
- ## 🏗 Architecture
-
-![Architecture](./architecture/architecture.png)
+```
