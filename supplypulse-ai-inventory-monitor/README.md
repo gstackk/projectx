@@ -1,42 +1,42 @@
-
 # 📦 SupplyPulse
 
-AI-powered inventory risk monitoring platform built using BigQuery, dbt, Python and Streamlit.
+AI-powered inventory risk monitoring platform built using BigQuery, dbt, Python, Streamlit and AI.
 
-SupplyPulse identifies products at risk of stockouts, provides natural-language inventory analysis using AI, and surfaces critical inventory alerts before stock is depleted.
+SupplyPulse helps operations teams identify stockout risks before inventory is depleted, prioritize replenishment actions, and analyze inventory using natural language instead of manual SQL queries.
 
 ---
 
-## 🚨 Business Problem
+# 🚨 Business Problem
 
-Inventory stockouts cause lost sales, delayed fulfillment and poor customer experience.
+Inventory stockouts can lead to:
+
+- Lost sales opportunities
+- Delayed order fulfillment
+- Poor customer experience
+- Increased operational costs
+- Reactive inventory management
 
 Operations teams often rely on static reports and manual SQL queries to identify inventory risks.
 
-SupplyPulse provides:
-
-- Automated inventory risk monitoring
-- Natural language inventory analysis
-- Real-time critical stockout alerts
-- Centralized inventory visibility
+SupplyPulse provides a centralized inventory intelligence platform that surfaces risk early and enables faster decisions.
 
 ---
 
-## ✅ Solution
+# ✅ Solution
 
 SupplyPulse combines:
 
-- BigQuery warehouse
+- BigQuery data warehouse
 - dbt transformation layer
-- AI-powered SQL generation
-- Streamlit dashboard
-- Alert engine
+- AI-powered natural language querying
+- Streamlit application
+- Inventory alert engine
 
-to create a single inventory intelligence platform.
+into a single inventory monitoring platform.
 
 ---
 
-## 🏗 Architecture
+# 🏗 Architecture
 
 ```text
 Inventory Data
@@ -58,9 +58,9 @@ fct_stockout_risk
 
 ---
 
-## 🤖 Features
+# 🤖 Key Features
 
-### AI Inventory Copilot
+## AI Inventory Copilot
 
 Ask inventory questions using plain English.
 
@@ -70,68 +70,135 @@ Examples:
 - Show all CRITICAL electronics
 - Average days of stock remaining?
 
-The AI converts questions into SQL and executes queries directly against BigQuery.
+The AI converts business questions into SQL and executes them directly against BigQuery.
 
-### Critical Stockout Alerts
+---
 
-Automatically identifies products at critical stockout risk and displays business alerts.
+## 🚨 Critical Stockout Alert Engine
 
-### Inventory Risk Dashboard
+Automatically identifies products at CRITICAL stockout risk and surfaces inventory alerts requiring immediate action.
 
-Provides:
+---
+
+## 📊 Inventory Risk Dashboard
+
+Provides visibility into:
 
 - Products At Risk
 - Critical Alerts
 - High Alerts
 - Average Days Remaining
 
-### Risk Analytics
+---
 
-Visualizes inventory risk distribution and prioritizes inventory actions.
+## 📈 Risk Analytics
+
+Visualizes inventory risk distribution and helps prioritize inventory actions.
 
 ---
 
-## 📸 Screenshots
+# 📸 Product Walkthrough
 
-## 📸 Dashboard
+### Dashboard Overview
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
-## 🤖 AI Copilot
-
-![AI Copilot](./screenshots/chatbot.png)
-
-## 🧠 Natural Language to SQL
-
-![Natural Language to SQL](./screenshots/natural_language_to_sql.png)
-
-## 🚨 Alert Engine
-
-![Critical Alert](./screenshots/critical_alert.png)
-
-## 🏗 dbt Lineage
-
-![dbt Lineage](./screenshots/DBT_DAG-lineagegraph.png)
+The dashboard provides inventory visibility, stockout monitoring, KPI tracking and operational alerts.
 
 ---
 
-## 🛠 Technology Stack
+### AI Inventory Copilot
+
+![AI Copilot](screenshots/chatbot.png)
+
+Users can ask inventory questions in natural language and receive inventory insights immediately.
+
+---
+
+### Natural Language → SQL
+
+![Natural Language to SQL](screenshots/natural_language_to_sql.png)
+
+Business questions are automatically converted into SQL and executed against BigQuery.
+
+---
+
+### Critical Stockout Alert Engine
+
+![Critical Alert](screenshots/critical_alert.png)
+
+Products requiring immediate operational attention are surfaced automatically.
+
+---
+
+### dbt Lineage
+
+![dbt Lineage](screenshots/DBT_DAG-lineagegraph.png)
+
+Analytics engineering workflow built using staging, intermediate, fact and mart layers.
+
+---
+
+# 🛠 Technology Stack
+
+### Data Warehouse
 
 - BigQuery
+
+### Data Transformation
+
 - dbt Core
-- Python
+
+### Application Layer
+
 - Streamlit
+
+### Programming
+
+- Python
+
+### AI Layer
+
 - Groq LLM
-- SQL
+- Natural Language → SQL
+
+### Version Control
+
+- Git
 - GitHub
 
 ---
 
-## 🚀 How To Run
+# 📂 Project Structure
+
+```text
+supplypulse-ai-inventory-monitor
+│
+├── screenshots/
+├── architecture/
+├── models/
+│   ├── staging/
+│   ├── intermediate/
+│   └── marts/
+│
+├── app.py
+├── alerts.py
+├── nl_to_sql.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# 🚀 How To Run
+
+### Build Warehouse
 
 ```bash
 dbt build
 ```
+
+### Launch Dashboard
 
 ```bash
 python -m streamlit run app.py
@@ -141,29 +208,30 @@ Open the Streamlit application and begin querying inventory data.
 
 ---
 
-## 💼 Business Impact
+# 💼 Business Impact
 
-SupplyPulse helps operations teams:
+SupplyPulse helps inventory and operations teams:
 
-- Identify stockout risk early
-- Prioritize inventory replenishment
+- Detect stockout risk early
+- Prioritize replenishment decisions
+- Reduce manual analysis effort
 - Improve inventory visibility
-- Reduce stockout-related revenue loss
+- Surface critical products requiring immediate review
 
 ---
 
-## 🔮 Future Enhancements
+# 🔮 Future Enhancements
 
-- Automated email notifications
-- Cloud Scheduler integration
+- Email notifications
+- Cloud Scheduler automation
 - Cloud Run deployment
-- Multi-warehouse support
 - Forecasting enhancements
+- Multi-location inventory monitoring
 
 ---
 
-## 👤 Author
+# 👤 Author
 
-Gowtham R
+**Gowtham R**
 
-Analytics Engineering & AI Data Products
+Analytics Engineering • BigQuery • dbt • Python • AI Data Products
