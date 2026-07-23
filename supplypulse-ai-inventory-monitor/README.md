@@ -27,6 +27,7 @@ SupplyPulse provides a centralized inventory intelligence platform that surfaces
 
 ![Dashboard](./screenshots/dashboard.png)
 
+![Dashboard](./supplypulse-ai-inventory-monitor/screenshots/dashboard.png)
 
 # ✅ Solution
 
