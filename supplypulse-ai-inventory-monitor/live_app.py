@@ -23,7 +23,11 @@ st.markdown(
 
 import pandas as pd
 
-df = pd.read_csv("demo_inventory.csv")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
+df = pd.read_csv(BASE_DIR / "demo_inventory.csv")
 
 st.sidebar.header("Filters")
 st.sidebar.markdown("---")
