@@ -1,1 +1,32 @@
 
+Analytics Engineer
+
+Company: Quantango
+
+Responsibilities:
+- Design analytics-ready data models
+- Build marts using dbt
+- Optimize BigQuery performance
+- Create business KPIs and metrics
+- Implement data quality validation
+
+Required Skills:
+- SQL
+- dbt
+- BigQuery
+- Python
+- Data Warehousing
+- Data Modeling
+- Git
+
+Nice to Have:
+- Dagster
+- Airflow
+- Metabase
+- Tableau
+
+Experience:
+4+ years
+
+Seniority:
+Senior
