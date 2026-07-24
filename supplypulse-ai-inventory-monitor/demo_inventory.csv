@@ -1,0 +1,27 @@
+sku_id,product_name,category,warehouse_id,supplier_id,snapshot_date,days_of_stock_remaining,risk_level,predicted_stockout_date,alert_message
+SKU-1017,Cotton T-Shirt 17,APP,WH-01,SUP-07,2026-07-18,0.0,CRITICAL,2026-07-23,Cotton T-Shirt 17 is CRITICAL risk. Only 0 days remaining.
+SKU-1025,Wireless Mouse 25,Electronics ,WH-01,SUP-05,2026-07-18,0.0,CRITICAL,2026-07-23,Wireless Mouse 25 is CRITICAL risk. Only 0 days remaining.
+SKU-1001,Wireless Mouse 01,ELEC,WH-01,SUP-01,2026-07-18,0.0,CRITICAL,2026-07-23,Wireless Mouse 01 is CRITICAL risk. Only 0 days remaining.
+SKU-1037,Power Bank 37,ELEC,WH-01,SUP-07,2026-07-18,1.97,CRITICAL,2026-07-25,Power Bank 37 is CRITICAL risk. Only 1.97 days remaining.
+SKU-1021,Bedside Table 21,Furniture ,WH-01,SUP-01,2026-07-18,3.5,HIGH,2026-07-27,Bedside Table 21 is HIGH risk. Only 3.5 days remaining.
+SKU-1029,Hoodie 29,Clothing,WH-01,SUP-09,2026-07-18,4.29,HIGH,2026-07-27,Hoodie 29 is HIGH risk. Only 4.29 days remaining.
+SKU-1033,Office Chair 33,Furniture,WH-01,SUP-03,2026-07-18,4.49,HIGH,2026-07-27,Office Chair 33 is HIGH risk. Only 4.49 days remaining.
+SKU-1018,Olive Oil 18,grocery,WH-02,SUP-08,2026-07-18,0.0,CRITICAL,2026-07-23,Olive Oil 18 is CRITICAL risk. Only 0 days remaining.
+SKU-1010,Gel Pen Set 10,OFFICE,WH-02,SUP-10,2026-07-18,0.0,CRITICAL,2026-07-23,Gel Pen Set 10 is CRITICAL risk. Only 0 days remaining.
+SKU-1022,Sticky Notes 22,Office Supplies,WH-02,SUP-02,2026-07-18,0.08,CRITICAL,2026-07-23,Sticky Notes 22 is CRITICAL risk. Only 0.08 days remaining.
+SKU-1038,Storage Jar 38,home kitchen,WH-02,SUP-08,2026-07-18,0.79,CRITICAL,2026-07-24,Storage Jar 38 is CRITICAL risk. Only 0.79 days remaining.
+SKU-1002,Coffee Mug 02,Kitchen,WH-02,SUP-02,2026-07-18,2.53,HIGH,2026-07-26,Coffee Mug 02 is HIGH risk. Only 2.53 days remaining.
+SKU-1030,Almonds 30,GROC,WH-02,SUP-10,2026-07-18,2.9,HIGH,2026-07-26,Almonds 30 is HIGH risk. Only 2.9 days remaining.
+SKU-1034,Gel Pen Set 34,OFFICE,WH-02,SUP-04,2026-07-18,4.63,HIGH,2026-07-28,Gel Pen Set 34 is HIGH risk. Only 4.63 days remaining.
+SKU-1031,Webcam 31,electronics,WH-03,SUP-01,2026-07-18,0.0,CRITICAL,2026-07-23,Webcam 31 is CRITICAL risk. Only 0 days remaining.
+SKU-1011,Denim Jacket 11,APP,WH-03,SUP-01,2026-07-18,0.0,CRITICAL,2026-07-23,Denim Jacket 11 is CRITICAL risk. Only 0 days remaining.
+SKU-1039,Folding Chair 39,FURN,WH-03,SUP-09,2026-07-18,0.0,CRITICAL,2026-07-23,Folding Chair 39 is CRITICAL risk. Only 0 days remaining.
+SKU-1003,Bookshelf 03,furniture,WH-03,SUP-03,2026-07-18,0.0,CRITICAL,2026-07-23,Bookshelf 03 is CRITICAL risk. Only 0 days remaining.
+SKU-1007,Webcam 07,Electronic,WH-03,SUP-07,2026-07-18,0.0,CRITICAL,2026-07-23,Webcam 07 is CRITICAL risk. Only 0 days remaining.
+SKU-1035,Denim Jacket 35,Clothing,WH-03,SUP-05,2026-07-18,0.17,CRITICAL,2026-07-23,Denim Jacket 35 is CRITICAL risk. Only 0.17 days remaining.
+SKU-1023,Cap 23,Apparel ,WH-03,SUP-03,2026-07-18,1.6,CRITICAL,2026-07-25,Cap 23 is CRITICAL risk. Only 1.6 days remaining.
+SKU-1015,Folding Chair 15,furniture,WH-03,SUP-05,2026-07-18,3.65,HIGH,2026-07-27,Folding Chair 15 is HIGH risk. Only 3.65 days remaining.
+SKU-1004,Printer Paper 04,Office Supplies,WH-04,SUP-04,2026-07-18,2.15,HIGH,2026-07-25,Printer Paper 04 is HIGH risk. Only 2.15 days remaining.
+SKU-1036,Protein Bar 36,Groceries,WH-04,SUP-06,2026-07-18,2.19,HIGH,2026-07-25,Protein Bar 36 is HIGH risk. Only 2.19 days remaining.
+SKU-1024,Peanut Butter 24,grocery,WH-04,SUP-04,2026-07-18,2.36,HIGH,2026-07-25,Peanut Butter 24 is HIGH risk. Only 2.36 days remaining.
+SKU-1012,Protein Bar 12,Grocery,WH-04,SUP-02,2026-07-18,2.36,HIGH,2026-07-25,Protein Bar 12 is HIGH risk. Only 2.36 days remaining.
