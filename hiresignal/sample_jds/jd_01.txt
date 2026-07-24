@@ -1,1 +1,31 @@
 
+Analytics Engineer
+
+Company: Box
+
+Responsibilities:
+- Build and maintain dbt models from raw data to marts
+- Define business metrics and semantic layer standards
+- Partner with analysts and data scientists
+- Implement data quality testing and monitoring
+- Develop data workflows and automations
+
+Required Skills:
+- SQL
+- dbt
+- BigQuery
+- Data Modeling
+- Data Testing
+- Python
+- Git
+
+Nice to Have:
+- Prefect
+- Semantic Layer Experience
+- Data Observability
+
+Experience:
+3+ years
+
+Seniority:
+Mid-Level
