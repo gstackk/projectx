@@ -1,1 +1,32 @@
 
+Analytics Engineer
+
+Company: NexTurn
+
+Responsibilities:
+- Build ETL/ELT pipelines
+- Create raw, curated and semantic data layers
+- Implement data quality checks
+- Document data assets and pipelines
+- Support BI and analytics use cases
+
+Required Skills:
+- SQL
+- BigQuery
+- dbt
+- Python
+- ETL
+- Data Governance
+- Data Quality
+
+Nice to Have:
+- Tableau
+- Looker
+- Product Analytics
+- AI for BI
+
+Experience:
+5+ years
+
+Seniority:
+Senior
