@@ -1,5 +1,7 @@
 # 📦 SupplyPulse
 
+🔗 https://projectx-supplypulse.streamlit.app
+
 AI-powered inventory risk monitoring platform built using BigQuery, dbt, Python, Streamlit and AI.
 
 SupplyPulse helps operations teams identify stockout risks before inventory is depleted, prioritize replenishment actions, and analyze inventory using natural language instead of manual SQL queries.
